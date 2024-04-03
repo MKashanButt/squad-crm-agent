@@ -127,7 +127,7 @@ class LeadResource extends Resource
     {
         return [
             'index' => Pages\ListLeads::route('/'),
-            'create' => Pages\CreateLead::route('/create'),
+            'create' => Pages\ListLeads::route('/'),
             'edit' => Pages\EditLead::route('/{record}/edit'),
         ];
     }
