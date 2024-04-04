@@ -96,7 +96,6 @@ class LeadResource extends Resource
                     ->options([
                         'denied' => 'Denied',
                         'error' => 'Error',
-                        'payable' => 'Payable',
                         'approved' => 'Approved',
                         'wrong doc' => 'Wrong doc',
                         'paid' => 'Paid',
