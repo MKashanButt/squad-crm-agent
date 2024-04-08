@@ -40,7 +40,8 @@ class TeamLeadsResource extends Resource
 
                 if ($user) {
                     $teamName = $user->team;
-                    $query->where('team', $teamName);
+                    $query->where('team', $teamName)
+                        ->orderBy('id', 'desc');
                 }
             })
             ->columns([
