@@ -27,6 +27,7 @@ class AgentPanelProvider extends PanelProvider
             ->id('agent')
             ->path('/')
             ->login()
+            ->sidebarWidth('15rem')
             ->colors([
                 'primary' => Color::Gray,
             ])

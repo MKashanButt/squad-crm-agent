@@ -36,8 +36,8 @@ class LeadResource extends Resource
                         'Wrong Doc' => 'Wrong Doc',
                         'Paid' => 'Paid',
                         'Awaiting' => 'Awaiting'
-                    ])
-                    ->required(),
+                    ]),
+                Forms\Components\TextInput::make('team'),
                 Forms\Components\Select::make('transfer_status')
                     ->options([
                         'Transferred' => 'Transferred',
@@ -129,6 +129,7 @@ class LeadResource extends Resource
                     ->date()
                     ->copyable()
                     ->sortable(),
+                Tables\Columns\TextInputColumn::make('team'),
                 Tables\Columns\TextColumn::make('status')
                     ->badge('status')
                     ->copyable()
