@@ -129,9 +129,14 @@ class LeadResource extends Resource
                     ->date()
                     ->copyable()
                     ->sortable(),
-                Tables\Columns\TextInputColumn::make('team'),
-                Tables\Columns\TextColumn::make('status')
-                    ->badge('status')
+                Tables\Columns\TextInputColumn::make('team')
+                    ->extraAttributes([
+                        'class' => 'width-full',
+                    ]),
+                Tables\Columns\TextInputColumn::make('status')
+                    ->extraAttributes([
+                        'class' => 'width-full',
+                    ])
                     ->copyable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('transfer_status')

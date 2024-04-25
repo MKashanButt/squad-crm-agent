@@ -50,6 +50,9 @@ class TeamLeadsResource extends Resource
                     ->copyable()
                     ->sortable(),
                 Tables\Columns\TextInputColumn::make('status')
+                    ->extraAttributes([
+                        'class' => 'width-full',
+                    ])
                     ->searchable(),
                 Tables\Columns\TextColumn::make('transfer_status')
                     ->badge('status')
