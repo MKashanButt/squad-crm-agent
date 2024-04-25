@@ -55,8 +55,6 @@ class TeamLeadsResource extends Resource
                     ])
                     ->searchable(),
                 Tables\Columns\TextColumn::make('transfer_status')
-                    ->badge('status')
-                    ->copyable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('centerCode.code')
                     ->numeric()
