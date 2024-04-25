@@ -137,7 +137,6 @@ class LeadResource extends Resource
                     ->extraAttributes([
                         'class' => 'width-full',
                     ])
-                    ->copyable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('transfer_status')
                     ->badge('status')
