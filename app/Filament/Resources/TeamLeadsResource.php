@@ -49,8 +49,7 @@ class TeamLeadsResource extends Resource
                     ->date()
                     ->copyable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('status')
-                    ->badge('status')
+                Tables\Columns\TextInputColumn::make('status')
                     ->copyable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('transfer_status')
